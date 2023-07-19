@@ -61,12 +61,11 @@ nav ul li a:hover {
 }
 
 section {
-	padding: 20px 0;
-	background-color: #157c2b;
 	height: calc(100vh - 100px);
 }
+/* PROMOCIONES */
 
-.grid {
+.grid-principal {
 	display: grid;
 	grid-template-columns: 70% 30%;
 	grid-gap: 20px;
@@ -74,21 +73,100 @@ section {
 
 .grid-section {
 	background-color: #fff;
-	padding: 20px;
 	border: 1px solid #000000;
 }
 
-.grid-item {
-	background-color: blue;
-	padding: 20px;
-	border: 1px solid #000000;
+.grid-promos {
+	display: grid;
+	grid-template-rows: 60% 35%;
+	gap: 20px;
 }
 
-.grid-item h2 {
-	margin-bottom: 20px;
+.carrousel-container {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	width: 100%;
 }
+
+.pizzas-list {
+	display: flex;
+	justify-content: space-evenly;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+.list-item {
+	margin: 0 10px;
+	border: 1px solid #000000;
+	text-align: center;
+}
+
+.list-item img {
+	width: 140px;
+}
+
+/* Formulario */
+
+.form-container {
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.form-container h2 {
+	margin-bottom: 30px;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 30px;
+	border: 1px solid #8498af;
+	padding: 15px 20px;
+	color: #8498af;
+	font-size: 0.9rem;
+	transition: 0.4s;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&:focus {
+		border-color: #157c2b;
+		outline: none;
+	}
+}
+
+[type='submit'] {
+	background: #157c2b;
+	border-radius: 30px;
+	padding: 16px 30px;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	transition: 0.4s;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+
+	&:hover {
+		background: wheat;
+		cursor: pointer;
+	}
+}
+
+/* FOOTER */
 
 footer {
 	background-color: #000000;
 	height: 40px;
+	color: white;
 }
